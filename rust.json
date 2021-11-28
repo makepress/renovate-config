@@ -42,7 +42,8 @@
     "regexManagers": [
         {
             "fileMatch": [
-                "^rust-toolchain\\.toml?$"
+                "^rust-toolchain\\.toml?$",
+                "^Cargo.lock$"
             ],
             "matchStrings": [
                 "channel\\s*=\\s*\"(?<currentValue>\\d+\\.\\d+\\.\\d+)\""
