@@ -3,6 +3,7 @@
     "dependencyDashboard": true,
     "semanticCommitType": "fix",
     "includeForks": true,
+    "lockFileMaintenance": { "enabled": true},
     "packageRules": [
         {
             "packagePatterns": [
