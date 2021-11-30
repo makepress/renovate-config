@@ -21,7 +21,7 @@ workflows:
 jobs:
   renovate:
     docker:
-      - image: "renovate/renovate:28.10.3-slim"
+      - image: "renovate/renovate:28.11.0-slim"
     steps:
       - setup_remote_docker
       - run:
