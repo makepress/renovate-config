@@ -28,7 +28,8 @@ jobs:
             LOG_LEVEL: debug
           command: |
             set -eux
-            nvm install node
+            curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+            nvm install node 2>&1
             npm install -g renovate
             renovate \
             --onboarding false \
