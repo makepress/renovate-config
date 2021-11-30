@@ -27,7 +27,7 @@ jobs:
             LOG_LEVEL: debug
           command: |
             set -eux
-            npm install -g renovate && renovate \
+            sudo apt-get install npm && npm install -g renovate && renovate \
             --onboarding false \
             --require-config true \
             --allow-custom-crate-registries true \
