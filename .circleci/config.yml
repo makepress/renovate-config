@@ -20,16 +20,14 @@ workflows:
                 - main
 jobs:
   renovate:
-    docker:
-      - image: "renovate/renovate:28.11.0-slim"
+    machine: true
     steps:
-      - setup_remote_docker
       - run:
           environment:
             LOG_LEVEL: debug
           command: |
             set -eux
-            renovate \
+            npx renovate \
             --onboarding false \
             --require-config true \
             --allow-custom-crate-registries true \
