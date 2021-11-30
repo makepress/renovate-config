@@ -3,7 +3,9 @@
     "dependencyDashboard": true,
     "semanticCommitType": "fix",
     "includeForks": true,
-    "lockFileMaintenance": { "enabled": true},
+    "lockFileMaintenance": {
+        "enabled": true
+    },
     "packageRules": [
         {
             "packagePatterns": [
@@ -43,8 +45,7 @@
     "regexManagers": [
         {
             "fileMatch": [
-                "^rust-toolchain\\.toml?$",
-                "^Cargo.lock$"
+                "^rust-toolchain\\.toml?$"
             ],
             "matchStrings": [
                 "channel\\s*=\\s*\"(?<currentValue>\\d+\\.\\d+\\.\\d+)\""
